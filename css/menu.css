@@ -1,0 +1,282 @@
+body {
+  background-color: #222;
+  color: #d6ccc1;
+}
+
+.menu-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.menu-logo > div {
+  padding: 0 1rem;
+}
+
+.top-logo {
+  font-family: "Satisfy", cursive;
+  font-size: 2rem;
+}
+
+.line-left,
+.line-right {
+  width: 20rem;
+  background-color: #d6ccc1;
+  height: 3px;
+}
+
+.headline {
+  font-size: 6rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  margin-right: -7px;
+}
+
+.menu-wrapper {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "item1 item2 item2"
+    "item3 item4 item5"
+    "item3 item4 item6"
+    "item7 item4 item6"
+    "item7 item4 item9"
+    "item7 item8 item9";
+  grid-gap: 1rem;
+}
+
+.grid-container > div {
+  font-size: 1rem;
+  border: 1px solid #d6ccc1;
+}
+
+.item1 {
+  grid-area: item1;
+}
+.item2 {
+  grid-area: item2;
+  text-align: center;
+}
+.item3 {
+  grid-area: item3;
+}
+.item4 {
+  grid-area: item4;
+}
+.item5 {
+  grid-area: item5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 4rem 0;
+  background-color: #d6ccc1;
+  color: #222;
+}
+
+.item6 {
+  grid-area: item6;
+}
+
+.item7 {
+  grid-area: item7;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  background-color: #d6ccc1;
+  color: #222;
+}
+
+.item7::after {
+  content: "";
+  background: url("https://source.unsplash.com/3YHXTs1CxFI") no-repeat center
+    center/cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  opacity: 0.25;
+}
+
+.item7 > div {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.item8 {
+  grid-area: item8;
+}
+.item9 {
+  grid-area: item9;
+}
+
+.grid-container > div > h4 {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.dark-title {
+  background-color: #222;
+  border-bottom: 1px solid #d6ccc1;
+}
+
+.light-title {
+  background-color: #d6ccc1;
+  color: #222;
+}
+
+.food > div > div > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.food > div > div > p {
+  font-size: 0.85rem;
+}
+
+.padder {
+  padding: 1rem 2rem;
+  line-height: 2rem;
+}
+
+.item2 h5 {
+  font-size: 1.2rem;
+}
+
+.item2 p {
+  font-size: 0.8rem;
+}
+
+.item6 > div > div,
+.item9 > div > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.sm-line {
+  background: #222;
+  height: 3px;
+  width: 2rem;
+  margin: 1rem 0;
+}
+
+.md-text {
+  font-size: 2rem;
+}
+
+.lg-text {
+  font-size: 5rem;
+}
+
+.item5 p {
+  padding: 0;
+  margin: 0;
+  line-height: 4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+footer {
+  background: #222;
+  border-top: #d6ccc1 1px solid;
+  color: #d6ccc1;
+}
+
+/* Media Queries */
+@media (max-width: 820px) {
+  .line-left,
+  .line-right {
+    width: 30%;
+  }
+
+  .top-logo {
+    font-size: 1.7rem;
+  }
+
+  .headline {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .menu-wrapper {
+    width: 95%;
+  }
+}
+@media (max-width: 768px) {
+  .grid-container > div > h4 {
+    font-size: 1.2rem;
+  }
+
+  .food > div > div > div,
+  .item2 h5 {
+    font-size: 1rem;
+  }
+
+  .item6 > div > div,
+  .item9 > div > div {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .food > div > div > p,
+  .item2 p {
+    font-size: 0.7rem;
+  }
+
+  .padder {
+    padding: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md-text {
+    font-size: 1.5rem;
+  }
+
+  .lg-text {
+    font-size: 3.9rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item7,
+  .item5 {
+    display: none;
+  }
+
+  .top-logo {
+    font-size: 1.5rem;
+  }
+
+  .line-left,
+  .line-right {
+    width: 20%;
+  }
+
+  .headline {
+    font-size: 3.5rem;
+  }
+}

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap");
+
+.hero {
+  height: 80vh;
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero::before {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../img/pexels-valeria-boltneva-1833349.jpg") no-repeat center
+    center / cover;
+  opacity: 0.7;
+  z-index: -1;
+  position: absolute;
+  background-attachment: fixed;
+}
+
+.gallery {
+  background: #fff;
+  padding: 3em 0;
+}
+
+footer {
+  height: 100%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+}
+footer::before {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../img/pexels-valeria-boltneva-1833349.jpg") no-repeat center
+    center / cover;
+  opacity: 0.7;
+  z-index: -1;
+  position: absolute;
+  background-attachment: fixed;
+}
+
+.copyright-bar {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 10px 5px 100px rgba(75, 74, 74, 0.1),
+    -10px -5px 100px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-wrapper > div {
+  flex: 25%;
+}
+
+.gallery-wrapper > div img {
+  padding: 1rem;
+}
+
+.hero h3 {
+  font-size: 2rem;
+  font-family: "Satisfy", cursive;
+  float: right;
+  padding: 2rem 3rem;
+  color: var(--yellow);
+}
+
+.hero-inner h1 {
+  font-weight: 100;
+  font-size: 5rem;
+  color: var(--yellow);
+  font-family: "Pinyon Script", cursive;
+}
+
+.hero-inner h1::first-letter {
+  font-size: 12rem;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .hero-inner h1 {
+    font-size: 4rem;
+  }
+
+  .hero-inner h1::first-letter {
+    font-size: 9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    padding: 2rem 0;
+  }
+
+  .gallery-wrapper {
+    padding: 0.2rem;
+  }
+
+  .gallery-wrapper > div {
+    flex: 100%;
+  }
+
+  .hero-inner h1 {
+    font-size: 2.7rem;
+  }
+
+  .hero-inner h1::first-letter {
+    font-size: 6rem;
+  }
+}
