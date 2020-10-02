@@ -130,6 +130,6 @@ footer::before {
 
   .hero::before,
   footer::before {
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 }
