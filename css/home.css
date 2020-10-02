@@ -281,13 +281,14 @@ footer {
   padding: 1rem 3rem;
 }
 
-.copyright-bar p:first-child {
+.copyright-bar a {
   font-family: "Satisfy", cursive;
   font-size: 1.6rem;
   display: inline-block;
+  color: #fff;
 }
 
-.copyright-bar p:last-child {
+.copyright-bar p {
   float: right;
   margin-top: 0.3rem;
 }

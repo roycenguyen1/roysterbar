@@ -127,4 +127,9 @@ footer::before {
   .hero-inner h1::first-letter {
     font-size: 6rem;
   }
+
+  .hero::before,
+  footer::before {
+    background-attachment: fixed;
+  }
 }
