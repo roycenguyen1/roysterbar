@@ -9,107 +9,56 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="./css/home.css">
-  <link rel="stylesheet" href="./css/nav.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/contact.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <title>Royster Bar | Contact</title>
 
 </head>
 
 <body>
   <a id="top"></a>
-  <header id="box">
-    <p>Royster Bar</p>
+  <a href="#top" id="back-to-top" title="Go back to top"><i class="fas fa-chevron-circle-up fa-2x"></i></a>
+  <header id="header">
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li class="main-logo"><a href="index.html"><span>Royster Bar</span></a></li>
+      <li class="btn"><a href="index.html">Home</a></li>
+      <li class="btn"><a href="menu.html">Menu</a></li>
+      <li class="btn"><a href="about.html">About</a></li>
+      <li class="btn"><a href="gallery.html">Gallery</a></li>
+      <li class="btn"><a href="#top">Contact</a></li>
+      <li class="hamburger-btn"><i class="fas fa-bars"></i></li>
     </ul>
   </header>
-  <section class="contact-wrapper">
-    <!-- Contact Page -->
-    <div class="middle-section">
-      <div class="middle-section-inner">
-        <div class="form">
-          <form>
-            <h2>Get In Touch</h2>
-            <div>
-              <input type="text" placeholder="First name" class="firstname">
-              <input type="text" placeholder="Last name" class="lastname">
-              <input type="number" placeholder="Phone number" class="phone">
-              <input type="email" placeholder="Email" class="email">
-              <textarea class="messages">Messages...</textarea>
-              <a href="#" class="submit-btn">Submit</a>
-            </div>
-          </form>
-        </div>
-        <div class="hour">
-          <h2>Hours of Operation</h2>
-          <ul>
-            <li><strong>MON-FRI</strong></li>
-            <li>10.00am - 1.00pm</li>
-            <li>6.00pm - 10.30pm</li>
-            <li><strong>SAT</strong></li>
-            <li>3.00pm - 10.30pm</li>
-            <li><strong>SUN</strong></li>
-            <li>3.00pm - 11.00pm</li>
-            <a href="#" class="submit-btn">Make a Reservasion</a>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- End Contact Page -->
-    <footer>
-      <div class="footer-top">
-        <div class="footer-top-col">
-          <p>9537 Jennings St.Newburgh, Suite 801</p>
-          <p>Austin, Indiana(IN), 47102</p>
-          <p>United State (USA)</p>
-          <p class="subscribe">subscribe to our newsletter</p>
-          <div class="subscribe-input">
-            <input type="email" placeholder="Enter you email.." class="s-border">
-            <button type="submit" class="submit s-border"><i class="fas fa-chevron-right"></i></button>
-          </div>
-        </div>
-        <div class="footer-top-col">
-          <p>Tel:</p>
-          <p>(555) 555 - 5555</p>
-          <p>(707) 707 - 7077</p>
-          <p>Follow Us</p>
-          <ul>
-            <li><a href="mailto:royce_nguyen@yahoo.com"><i class='bx bx-mail-send bx-md bx-tada-hover'></i></a></li>
-            <li><a href="https://twitter.com"><i class='bx bxl-twitter bx-md bx-tada-hover'></i></a></li>
-            <li><a href="https://facebook.com"><i class='bx bxl-facebook bx-md bx-tada-hover'></i></a></li>
-            <li><a href="https://instagram.com"><i class='bx bxl-instagram-alt bx-md bx-tada-hover'></i></a></li>
-          </ul>
-        </div>
-        <div class="footer-top-col" id="back-to-top">
-          <a href="#top">Top <i class="fas fa-arrow-up"></i></a>
-        </div>
-      </div>
-      <div class="copyright-bar">
-        <a href="index.html">Royster Bar</a>
-        <p>Copyright &copy; Royster Bar 2020</p>
-      </div>
+  <section class="hero">
 
-    </footer>
   </section>
-  <script type="text/javaScript">
-    var box = document.getElementById('box');
-    
-    window.onscroll = function(){
-      
-      if (window.pageYOffset >100) {
-        box.style.background = "rgba(0,0,0,0.7)";
-      }
-      else{
-        box.style.background = "tranparent";
-      }
-    }
-  </script>
+  <footer>
+    <ul>
+      <li>
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#top.html">Contact</a></li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li><a href="mailto:roycenguyen1992@gmail.com"><i class="bx bx-mail-send bx-border-circle bx-sm"></i></a></li>
+          <li><a href="https://facebook.com"><i class="bx bxl-facebook bx-border-circle bx-sm"></i></a></li>
+          <li><a href="https://twitter.com"><i class="bx bxl-twitter bx-border-circle bx-sm"></i></a></li>
+          <li><a href="https://instagram.com"><i class="bx bxl-instagram-alt bx-border-circle bx-sm"></i></a></li>
+        </ul>
+      </li>
+      <li><small>Copyright &copy; Royster Bar, 2020</small></li>
+    </ul>
+  </footer>
+
+
+  <script src="./js/contact.js"></script>
 </body>
 
 </html>
